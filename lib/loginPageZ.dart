@@ -48,7 +48,8 @@ class _LoginPageZState extends State<LoginPageZ> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      body:Container(
+      body:new SingleChildScrollView(
+            child:Container(
         child: Column(
       children: <Widget>[
         Padding(
@@ -110,7 +111,7 @@ class _LoginPageZState extends State<LoginPageZ> {
         )
       ],
       ),
-      )
+            ))
     );
   }
 }
